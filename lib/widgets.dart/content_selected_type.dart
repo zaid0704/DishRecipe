@@ -37,8 +37,14 @@ class SelectedTypeDishes extends StatelessWidget {
 
           ),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              //Text(myList[index].duration)
+              
+              Text('${myList[index].duration}'),
+              Padding(
+                padding: EdgeInsets.only(right: 20),
+              ),
+              Text('${myList[index].affordability}'),
             ],
           )
         ],

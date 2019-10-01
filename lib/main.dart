@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:meal/paticularTypeDish.dart';
 import 'meal_list.dart';
+import 'tabsScreen.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
@@ -22,9 +23,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       
-      home: Scaffold(
-        appBar: app_bar,
-        body: MealList(),
+      home: 
+      Scaffold(
+        
+        body: TabsScreen(),
         
       ),
       routes: {

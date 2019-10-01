@@ -21,10 +21,13 @@ class GridBoxMaker extends StatelessWidget {
       splashColor: Colors.orange,
       borderRadius: BorderRadius.circular(15),
       child: Container(
+      margin: EdgeInsets.only(top:20,left:10 , right: 10),
+      
       child: Text(title), 
       padding: const EdgeInsets.all(15),
       alignment: Alignment.center,
       decoration: BoxDecoration(
+        borderRadius: BorderRadius.circular(15),
         gradient: LinearGradient(
           colors: [color.withOpacity(0.7),
                   color],
