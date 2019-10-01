@@ -11,7 +11,18 @@ class SelectedTypeDishes extends StatelessWidget {
     return ListView.builder(
       itemCount: myList.length,
       itemBuilder: (context,index){
-        return BeautifulCard(myList,index);
+        return InkWell(
+          child: BeautifulCard(myList,index),
+          onTap: (){
+             Navigator.of(context).pushNamed('/recipe',arguments: {
+               'url':myList[index].imageUrl,
+               'steps':myList[index].steps
+             });
+            
+          },
+         
+        );
+        
       },
     );
   }

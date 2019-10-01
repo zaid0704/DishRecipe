@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:meal/paticularTypeDish.dart';
-import 'meal_list.dart';
+import './Screens.dart/recipe.dart';
 import 'tabsScreen.dart';
 void main() => runApp(MyApp());
 
@@ -19,9 +19,12 @@ class MyApp extends StatelessWidget {
     );
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
+      theme: new ThemeData(
+        brightness: Brightness.light,
+        primaryColor: Colors.pink[800], //Changing this will change the color of the TabBar
+        accentColor: Colors.cyan[600],
       ),
+      
       
       home: 
       Scaffold(
@@ -30,7 +33,8 @@ class MyApp extends StatelessWidget {
         
       ),
       routes: {
-        '/particularDish':(ctx)=>ParticularDishes()
+        '/particularDish':(ctx)=>ParticularDishes(),
+        '/recipe':(context)=>Recipe()
       },
       );
   }
