@@ -4,6 +4,9 @@ import '../dummy_data.dart';
 class SelectedTypeDishes extends StatelessWidget {
   final String id;
   SelectedTypeDishes(this.id);
+  // bool filter(test,filters){
+
+  // }
   Widget build(BuildContext context) {
     final myList = DUMMY_MEALS.where((test){
       return test.categories.contains(id);
@@ -14,10 +17,8 @@ class SelectedTypeDishes extends StatelessWidget {
         return InkWell(
           child: BeautifulCard(myList,index),
           onTap: (){
-             Navigator.of(context).pushNamed('/recipe',arguments: {
-               'url':myList[index].imageUrl,
-               'steps':myList[index].steps
-             });
+            print('hi${myList[index].id}');
+             Navigator.of(context).pushNamed('/recipe',arguments: {'id':myList[index].id});
             
           },
          

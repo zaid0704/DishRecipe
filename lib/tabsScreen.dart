@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'favourite.dart';
 import 'meal_list.dart';
+import './widgets.dart/mydrawer.dart';
 class TabsScreen extends StatefulWidget {
   
 
@@ -16,6 +17,7 @@ class _TabsScreenState extends State<TabsScreen> {
       
       child: Scaffold(
         appBar: AppBar(title: Text('Meal'),
+        
         bottom: TabBar(
           
           indicatorColor: Colors.purple,
@@ -29,6 +31,26 @@ class _TabsScreenState extends State<TabsScreen> {
             favorite(),
           ],
         ),
+        bottomNavigationBar: BottomNavigationBar(
+          currentIndex: 0,
+          elevation: 8.0,
+          type: BottomNavigationBarType.shifting,
+          backgroundColor: Colors.redAccent,
+          selectedItemColor: Colors.yellow,
+          
+          unselectedItemColor: Colors.white,
+          items: [
+            BottomNavigationBarItem(
+              icon: Icon(Icons.category),
+              title: Text('Category')
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(Icons.favorite),
+              title: Text('Favorite')
+            )
+          ],
+        ),
+        drawer:myDrawer(),
 
       ),
     );

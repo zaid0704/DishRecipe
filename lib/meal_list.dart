@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'dummy_data.dart';
 import 'grid_box_maker.dart';
+import 'category.dart';
 class MealList extends StatefulWidget {
   
 
@@ -9,6 +10,10 @@ class MealList extends StatefulWidget {
 
 class _MealListState extends State<MealList> {
   @override
+  @override
+  
+    
+  
   Widget build(BuildContext context) {
     return GridView(
       children: 
