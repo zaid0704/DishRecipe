@@ -40,6 +40,9 @@ class MyApp extends StatelessWidget {
         'filterScreen':(context)=>filter(),
         '/mainScreen':(ctx)=>MealList(),
       },
+      // onUnknownRoute:(settings) => MaterialPageRoute(
+      // builder:(ctx)=>MealList(),
+      // )
       );
   }
 }
