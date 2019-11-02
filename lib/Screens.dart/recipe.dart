@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../dummy_data.dart';
+
 import '../meal.dart';
+
+
 class Recipe extends StatelessWidget {
  
 
@@ -20,18 +23,21 @@ class Recipe extends StatelessWidget {
         child:Column(
         mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
-        Container(
+        ClipRRect(
+          borderRadius: BorderRadius.circular(15),
+          child:  Container(
           child: Image.network(selectedMealRecipe.imageUrl),
           width: double.infinity ,
           height: 300,
-        ),
+        ),),
+       
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
           
-          Text('${selectedMealRecipe.duration}',style:TextStyle(fontSize: 30,),)
+          Text('${selectedMealRecipe.duration}',style:TextStyle(fontSize: 30,fontFamily: 'Quicksand',fontWeight: FontWeight.bold),)
         ],),
-        Text('Ingridients'),
+        Text('Ingridients',style:TextStyle(fontSize:15,fontFamily: 'Quicksand',fontWeight: FontWeight.bold),),
         Container(
           width: 300,
           height: 150,
@@ -50,7 +56,7 @@ class Recipe extends StatelessWidget {
             },
           ),
         ),
-        Text('Steps'),
+        Text('Steps',style:TextStyle(fontSize:15,fontFamily: 'Quicksand',fontWeight: FontWeight.bold),),
         Container(
           width: 300,
           height: 300,

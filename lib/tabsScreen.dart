@@ -31,25 +31,25 @@ class _TabsScreenState extends State<TabsScreen> {
             favorite(),
           ],
         ),
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: 0,
-          elevation: 8.0,
-          type: BottomNavigationBarType.shifting,
-          backgroundColor: Colors.redAccent,
-          selectedItemColor: Colors.yellow,
+        // bottomNavigationBar: BottomNavigationBar(
+        //   currentIndex: 0,
+        //   elevation: 8.0,
+        //   type: BottomNavigationBarType.shifting,
+        //   backgroundColor: Colors.redAccent,
+        //   selectedItemColor: Colors.yellow,
           
-          unselectedItemColor: Colors.white,
-          items: [
-            BottomNavigationBarItem(
-              icon: Icon(Icons.category),
-              title: Text('Category')
-            ),
-            BottomNavigationBarItem(
-              icon: Icon(Icons.favorite),
-              title: Text('Favorite')
-            )
-          ],
-        ),
+        //   unselectedItemColor: Colors.white,
+        //   items: [
+        //     BottomNavigationBarItem(
+        //       icon: Icon(Icons.category),
+        //       title: Text('Category')
+        //     ),
+        //     BottomNavigationBarItem(
+        //       icon: Icon(Icons.favorite),
+        //       title: Text('Favorite')
+        //     )
+        //   ],
+        // ),
         drawer:myDrawer(),
 
       ),
