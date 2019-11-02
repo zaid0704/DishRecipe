@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
         brightness: Brightness.light,
         primaryColor: Colors.pink[800],
         accentColor: Colors.cyan[600],
+        fontFamily:'Quicksand'
       ),
       
       

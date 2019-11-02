@@ -29,7 +29,7 @@ class Recipe extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
           
-          Text('${selectedMealRecipe.duration}',style:TextStyle(fontSize: 30),)
+          Text('${selectedMealRecipe.duration}',style:TextStyle(fontSize: 30,),)
         ],),
         Text('Ingridients'),
         Container(
@@ -43,7 +43,7 @@ class Recipe extends StatelessWidget {
             itemCount:selectedMealRecipe.ingredients.length ,
             itemBuilder: (context,index){
               return Card(
-                margin: EdgeInsets.all(10),
+                margin: EdgeInsets.all(2),
                 elevation: 6.0,
                 child: Text(selectedMealRecipe.ingredients[index]),
               );

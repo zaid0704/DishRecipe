@@ -25,7 +25,7 @@ class _MealListState extends State<MealList> {
         maxCrossAxisExtent: 200,
         childAspectRatio: 3/2,
         mainAxisSpacing: 10,
-        crossAxisSpacing: 10,
+        crossAxisSpacing:7 ,
       )
 
     );
